@@ -1,0 +1,26 @@
+```yaml
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: "3.10"
+
+build:
+  requirementsPath: requirements.txt
+
+run:
+  scriptName: main.py
+  command: python -m main
+  port: 8080
+
+expose:
+  - port: 8080
+    protocol: http
+
+env:
+  - name: BOT_TOKEN
+    value: ${BOT_TOKEN}
+  - name: DATABASE_URL
+    value: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}
+  - name: WEB_APP_PORT
+    value: "8080"
