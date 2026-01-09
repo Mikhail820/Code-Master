@@ -1,0 +1,27 @@
+# Telegram
+BOT_TOKEN=1234567890:ABCdefGHIjklMNOpqrSTUvwxYZ
+CHANNEL_ID=@your_channel_username
+ADMIN_IDS=123456789,987654321
+
+# Security
+CRYPTO_KEY=your_32_byte_base64_encryption_key_here
+
+# Payments
+T_BANK_TOKEN=your_tbank_api_token
+T_BANK_SHOP_ID=your_shop_id
+PAYMENT_PROVIDER=tbank  # tbank or stars
+STARS_TO_RUB=7.0
+
+# Referral System
+MAX_REFERRALS_PER_DAY=10
+ABUSE_CHECK_HOURS=24
+
+# App Settings
+DEBUG=True
+LOG_LEVEL=INFO
+DATABASE_URL=sqlite:///codemaster.db
+
+# Web Interfaces
+MINI_APP_URL=https://your-domain.com/mini-app
+WEB_APP_HOST=0.0.0.0
+WEB_APP_PORT=8080
